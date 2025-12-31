@@ -32,7 +32,6 @@
 @layer components {
   .mystic-glow {
     box-shadow: var(--shadow-mystic);
-    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
   }
   
   .mystic-button {

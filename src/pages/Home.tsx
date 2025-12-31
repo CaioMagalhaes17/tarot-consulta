@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-dark-gradient px-4">
       <div className="text-center max-w-3xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-mystic-200 mystic-glow">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-mystic-200">
           Consulta Tarológica
         </h1>
         <p className="text-xl md:text-2xl mb-12 text-mystic-300">

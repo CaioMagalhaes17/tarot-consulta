@@ -2,7 +2,7 @@ export default function Sobre() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-dark-gradient px-4 py-12">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-mystic-200 mystic-glow">
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-mystic-200">
           Sobre
         </h1>
         <div className="mystic-card">
