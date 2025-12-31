@@ -1,68 +1,77 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+@theme {
+  --color-mystic-50: #faf5ff;
+  --color-mystic-100: #f3e8ff;
+  --color-mystic-200: #e9d5ff;
+  --color-mystic-300: #d8b4fe;
+  --color-mystic-400: #c084fc;
+  --color-mystic-500: #a855f7;
+  --color-mystic-600: #9333ea;
+  --color-mystic-700: #7e22ce;
+  --color-mystic-800: #6b21a8;
+  --color-mystic-900: #581c87;
+  --color-mystic-950: #3b0764;
+  
+  --color-dark-purple: #1a0d2e;
+  --color-dark-deep: #0f0519;
+  
+  --shadow-mystic: 0 10px 40px rgba(168, 85, 247, 0.3);
+  --shadow-mystic-lg: 0 20px 60px rgba(168, 85, 247, 0.4);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  body {
+    background-color: var(--color-dark-deep);
+    color: white;
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
   }
-  a:hover {
-    color: #747bff;
+}
+
+@layer components {
+  .mystic-glow {
+    box-shadow: var(--shadow-mystic);
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
   }
-  button {
-    background-color: #f9f9f9;
+  
+  .mystic-button {
+    background-color: var(--color-mystic-600);
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+    box-shadow: var(--shadow-mystic);
+    display: inline-block;
+  }
+  
+  .mystic-button:hover {
+    background-color: var(--color-mystic-700);
+    box-shadow: var(--shadow-mystic-lg);
+  }
+  
+  .mystic-card {
+    background: linear-gradient(to bottom right, var(--color-mystic-800), var(--color-mystic-900));
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-mystic);
+    border: 1px solid var(--color-mystic-700);
+  }
+  
+  .bg-dark-gradient {
+    background: linear-gradient(135deg, var(--color-dark-purple) 0%, var(--color-dark-deep) 100%);
+  }
+  
+  .text-mystic-100 {
+    color: var(--color-mystic-100);
+  }
+  
+  .text-mystic-200 {
+    color: var(--color-mystic-200);
+  }
+  
+  .text-mystic-300 {
+    color: var(--color-mystic-300);
   }
 }
