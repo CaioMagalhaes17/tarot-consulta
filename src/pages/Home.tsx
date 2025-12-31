@@ -13,35 +13,33 @@ export default function Home() {
         }}
       >
         {/* Overlay com opacidade */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/80"></div>
         
         {/* Conteúdo principal centralizado */}
         <div className="relative z-10 px-4 max-w-7xl mx-auto w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
             {/* Lado esquerdo - Imagem */}
-            <div className="shrink-0 order-2 lg:order-1">
+            <div className="shrink-0 order-1 lg:order-1">
               <img 
                 src="/image2.webp" 
                 alt="Dara Anamê" 
-                className="rounded-lg w-80 h-80 lg:w-96 lg:h-96 object-cover shadow-2xl"
+                className="rounded-lg w-80 lg:w-140 object-cover shadow-xl"
               />
             </div>
             
             {/* Lado direito - Conteúdo centralizado */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 order-1 lg:order-2">
+            <div className="flex flex-col items-center text-start flex-1 order-2 lg:order-2">
               {/* Subtítulo pequeno */}
-              <p className="text-sm md:text-base uppercase tracking-wider text-mystic-300 mb-4">
-                Bem-vindo ao Tarot Consulta
-              </p>
+              
               
               {/* Título principal */}
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                <span className="block text-white">Revele os Mistérios</span>
-                <span className="block text-mystic-400">da Sua Vida</span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 ">
+                <span className="block text-white">Tarot Consulta</span>
+                <span className="block text-mystic-400">Dara Anamê</span>
               </h1>
               
               {/* Descrição */}
-              <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl">
+              <p className="text-lg md:text-lg text-white/80 mb-10 text-start max-w-2xl">
                 Tarot Consulta foi construído com muito carinho pela cartomante Dara Anamê. 
                 Descubra respostas e direcionamento através das cartas do tarot.
               </p>
@@ -86,16 +84,16 @@ export default function Home() {
       {/* Seção Páginas Principais */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-mystic-200">
+          <h2 className="text-3xl md:text-6xl font-bold text-center mb-12 text-mystic-200">
             Páginas Principais
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             {/* Cartomante Online */}
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/cartomante.png" 
                   alt="Cartomante Online" 
                   className="w-full h-72 object-cover"
                 />
@@ -109,7 +107,7 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/simounao.png" 
                   alt="Sim ou Não" 
                   className="w-full h-72 object-cover"
                 />
@@ -123,7 +121,7 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/baralho.png" 
                   alt="Baralho cigano online" 
                   className="w-full h-72 object-cover"
                 />
@@ -137,7 +135,7 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/tarotdoamor.png" 
                   alt="Tarot do amor" 
                   className="w-full h-72 object-cover"
                 />
@@ -156,18 +154,18 @@ export default function Home() {
       </div>
       
       {/* Seção Principais Artigos */}
-      <section className="py-16 px-4">
+      <section className="px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-mystic-200">
+          <h2 className="text-3xl md:text-6xl font-bold text-center mb-12 text-mystic-200">
             Principais Artigos
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             {/* Horas Iguais */}
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/horas.png" 
                   alt="Horas Iguais" 
                   className="w-full h-72 object-cover"
                 />
@@ -181,7 +179,7 @@ export default function Home() {
             <div className="flex flex-col">
               <div className="mystic-card cursor-pointer hover:scale-105 transition-transform overflow-hidden p-0">
                 <img 
-                  src="/image2.webp" 
+                  src="/cobra.png" 
                   alt="Significado de Sonhos" 
                   className="w-full h-72 object-cover"
                 />
